@@ -1,11 +1,11 @@
-![Senku](https://telegra.ph/file/cbad2a4725b43314dc340.jpg)
-# Senku
+![Raiden Shogun](https://telegra.ph/file/2a35dcec012ad89d3d28c.jpg)
+# Raiden Shogun
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)!]
 
 
-A modular Telegram Group Management bot, can be found on telegram as [Senku](https://t.me/Senkubest_bot).
+A modular Telegram Group Management bot, can be found on telegram as [Raiden Shogun](https://t.me/The_Raiden_Shogun_bot).
 
-The Support group can be reached out to at [Support](https://t.me/SenkuSupportChat), where you can ask for help about Senku Bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Support](https://t.me/raiden_shogunSUPPORTCHAT), where you can ask for help about Raiden Shogun Bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 ## How to setup/deploy.
 
@@ -22,7 +22,7 @@ REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
 
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/asadali32117/SenkuIshigamiPTB.git)
+  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/asadali32117/Raiden ShogunIshigamiPTB.git)
 
 </details>  
 <details>
@@ -37,7 +37,7 @@ This is because markdown parsing is done by iterating through a dict, which is o
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The preferred version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `Senku` folder, alongside the `__main__.py` file. 
+This file should be placed in your `Raiden Shogun` folder, alongside the `__main__.py` file. 
 This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of
 your other settings.
 
@@ -46,18 +46,20 @@ defaults set in the sample_config, hence making it easier to upgrade.
 
 An example `config.py` file could be:
 ```
-from Senku.sample_config import Config
+from Raiden Shogun.sample_config import Config
 
 class Development(Config):
-    OWNER_ID = 254318997  # your telegram ID
-    OWNER_USERNAME = "SonOfLars"  # your telegram username
+    OWNER_ID = 12345678  # your telegram ID
+    OWNER_USERNAME = "@DAZAI_NoLongerHuman"  # your telegram username
     API_KEY = "your bot api key"  # your api key, as provided by the @botfather
+    MONGO_db_URI = "mongodb+srv://username:pwd@host.port.mongodb.net/db_name"
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     JOIN_LOGGER = '-1234567890' # some group chat that your bot is a member of
     USE_JOIN_LOGGER = True
-    DRAGONS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
+    SHOGUNS = [00000000, 11111111]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
+    STRICT_GBAN = True
 ```
 
 If you can't have a config.py file (EG on Heroku), it is also possible to use environment variables.
@@ -152,7 +154,7 @@ through the `/stats` command, which is only available to the bot owner.
 
 Once you've set up your database and your configuration is complete, simply run the bat file(if on windows) or run (Linux):
 
-`python3 -m Senku`
+`python3 -m Raiden Shogun`
 
 You can use [nssm](https://nssm.cc/usage) to install the bot as service on windows and set it to restart on /gitpull 
 Make sure to edit the start and restart bats to your needs. 
@@ -162,7 +164,7 @@ Note: the restart bat requires that User account control be disabled.
 ## How to setup on Heroku 
 For starters click on this button 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/asadali32117/SenkuIshigamiPTB.git) 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/asadali32117/Raiden ShogunIshigamiPTB.git) 
 
 
 ## Credits
