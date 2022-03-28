@@ -50,13 +50,13 @@ from Raiden Shogun.sample_config import Config
 
 class Development(Config):
     OWNER_ID = 12345678  # your telegram ID
-    OWNER_USERNAME = "@DAZAI_NoLongerHuman"  # your telegram username
+    OWNER_USERNAME = "TheMarshall_Mathers"  # your telegram username
     API_KEY = "your bot api key"  # your api key, as provided by the @botfather
     MONGO_db_URI = "mongodb+srv://username:pwd@host.port.mongodb.net/db_name"
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     JOIN_LOGGER = '-1234567890' # some group chat that your bot is a member of
     USE_JOIN_LOGGER = True
-    SHOGUNS = [00000000, 11111111]  # List of id's for users which have sudo access to the bot.
+    SHOGUNS = [1633306134]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
     STRICT_GBAN = True
